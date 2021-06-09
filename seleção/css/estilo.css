@@ -1,0 +1,25 @@
+body{
+    background: aliceblue;
+    font-size: 120%;
+    margin: 3%;
+  
+  }
+   h1{
+       color:gold;
+   }
+
+h2{
+ color: blue;
+}
+
+img{
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+img:hover{
+  transform: scale(1.5);
+}
+
+footer{
+    clear:left;
+  }
