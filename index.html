@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Seleção
+        </title>
+        <meta charset="UTF-8"/>
+        <script src="js/functions.js"></script>
+        <link rel="stylesheet" href="css/estilo.css"/>
+        
+    </head>
+    <body>
+        <h1>Seleção Brasileira</h1>
+        <!--
+        <a href="javascript:callFetchWithGet()">Get</a>
+        <a href="javascript:callFetchWithPost('Weverton','Palmeiras','Goleiro')">Post</a>
+        <a href="javascript:callFetchWithPut(3,'Felipe','Atl.Madrid','Zagueiro')">Put</a>
+        <a href="javascript:callFetchWithDelete(4)">Delete</a>
+        <p id="json"> </p>
+         -->
+
+        <section class="post" >
+        <h2>Adicionar Jogador (Post)</h2>
+    </section>
+        <form id="postForm">
+        <label for="jogadores">Jogador:</label>
+        <input type="text" id ="jogadores" name="jogadores"/>
+        
+        <label for="time">Time:</label>
+        <input type="text" id ="time" name="time"/>
+        
+        <label for="posição">Posição:</label>
+        <input type="text" id ="posição" name="posição"/>
+
+        <button type="submit" onclick="return submitPost()">Submit</button>
+        </form>
+        
+
+        <h2>Substituição (Put)</h2>
+        <form id="putForm">
+        <label>Id:<input type="text" name="id"/></label>
+        <label for="jogadores">Jogador:</label>
+        <input type="text" id ="jogadores" name="jogadores"/>
+        
+        <label for="time">Time:</label>
+        <input type="text" id ="time" name="time"/>
+        
+        <label for="posição">Posição:</label>
+        <input type="text" id ="posição" name="posição"/>
+        
+        
+         <button type="submit" onclick="return submitPut()">Submit</button>
+         </form>
+
+         <h2>Jogador Machucado (Delete)</h2>
+         <form id="deleteForm">
+         <label>Id:<input type="text" name="id"/></label>        
+          <button type="submit" onclick="return submitDelete()">Submit</button>
+          </form>
+
+          <footer>
+ <img src="brasil.png" width="275px" />
+ <img src="selecao.jpg" width="250px" />
+ </footer>
+    </body>
+    </html>
